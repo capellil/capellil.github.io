@@ -1,0 +1,276 @@
+*
+{
+	color: rgb(40, 40, 40);
+	scroll-behavior: smooth;
+}
+
+body
+{
+	font-family: "Quicksand";
+	margin: 0px;
+}
+
+.fakeButton
+{
+	cursor: pointer;
+}
+
+/**********
+ * HEADER *
+ **********/
+header
+{
+	display: block;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background-color: white;
+	z-index: 1;
+}
+
+header > #categories
+{
+	text-align: center;
+	border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+header > #categories > .category
+{
+	display: inline-block;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: white;
+	transition: background-color 0.2s;
+}
+
+header > #categories > .category:hover
+{
+	background-color: rgb(240, 240, 240);
+	transition: 0.2s;
+}
+
+header > #categories > .category > p
+{
+	margin: 0px;
+	font-variant: small-caps;
+	font-size: 20px;
+	transition: color 0.2s;
+}
+
+header > #categories > .category:hover > p
+{
+	color: white;
+}
+
+header > #categories > #aboutButton:hover
+{
+	background-color: grey;
+}
+
+header > #categories > #degreesButton:hover
+{
+	background-color: rgb(28, 154, 251);
+}
+
+header > #categories > #awardsButton:hover
+{
+	background-color: rgb(247, 185, 43);
+}
+
+header > #categories > #publicationsButton:hover
+{
+	background-color: rgb(251, 51, 44);
+}
+
+header > #categories > #experienceButton:hover
+{
+	background-color: rgb(36, 173, 39);
+}
+
+header > #categories > #teachingButton:hover
+{
+	background-color: rgb(134, 36, 173);
+}
+
+header > #categories > #volunteeringButton:hover
+{
+	background-color: rgb(247, 97, 43);
+}
+
+/***********
+ * SECTION *
+ ***********/
+#mainSection
+{
+	clear: both;
+	max-width: 1024px;
+	margin: 0px auto;
+}
+
+#mainSection > #about
+{
+	height: 300px;
+	margin: 40px;
+	margin-top: 80px;
+}
+
+#mainSection > #about > #photo
+{
+	float: left;
+	height: 300px;
+	width: 193px;
+	margin-right: 40px;
+	box-shadow: 0px 0px 10px rgb(140, 140, 140);
+	z-index: -1;
+}
+
+#mainSection > #about > #photo > img
+{
+	position: absolute;
+	height: 300px;
+}
+
+#mainSection > #about > #photo > img:last-child
+{
+	opacity: 0;
+	transition: 3s;
+}
+
+#mainSection > #about > #photo > img:last-child:hover
+{
+	opacity: 1;
+}
+
+#mainSection > #about > h1
+{
+	display: inline-block;
+	margin: 0px;
+	font-weight: lighter;
+}
+
+#mainSection > #about > #contactLogos
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#mainSection > #about > #contactLogos > .contactLogo
+{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+#mainSection > #about > #contactLogos > .contactLogo > img
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	opacity: 0.5;
+	transition: opacity 0.5s;
+  	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+
+#mainSection > #about > #contactLogos > .contactLogo > img:hover
+{
+	opacity: 1;
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+}
+
+#mainSection > #about .extra
+{
+	display: none;
+}
+
+#mainSection > #about > #inANutshell
+{
+	margin-top: 160px;
+	font-style: italic;
+}
+
+#mainSection > section
+{
+	margin: 40px;
+	box-shadow: 0px 0px 5px rgb(180, 180, 180);
+}
+
+#mainSection > section > h1
+{
+	padding: 40px;
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-variant: small-caps;
+	font-size: 175%;
+	color: white;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+#mainSection > section > div
+{
+}
+
+#mainSection > section > div > article
+{
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 1px solid rgb(210, 210, 210);
+}
+
+#mainSection > section > div > article:first-child
+{
+	border-top: none;
+}
+
+#mainSection > section > div > article:last-child
+{
+}
+
+#mainSection > section > div article > .timeEntry
+{
+	clear: both;
+	float: left;
+	width: 60px;
+	margin-right: 20px;
+}
+
+#mainSection > section > div article > .timeEntry > .logo
+{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0px auto;
+	margin-top: 15px;
+}
+
+#mainSection > section > div article > .timeEntry > .date
+{
+	font-size: 10px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#mainSection > section > div > article > .description
+{
+	margin-left: 80px;
+}
+
+#mainSection > section > div > article > .description > h1
+{
+	font-size: 125%;
+	font-variant: small-caps;
+}
+
+/**********
+ * FOOTER *
+ **********/
+footer
+{
+	text-align: center;
+	font-size: 50%;
+}
