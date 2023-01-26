@@ -266,6 +266,11 @@ header > #categories > #volunteeringButton:hover
 	font-variant: small-caps;
 }
 
+#mainSection > section > div > article > .description > p
+{
+	text-align: justify;
+}
+
 /**********
  * FOOTER *
  **********/
