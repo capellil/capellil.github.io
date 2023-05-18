@@ -185,6 +185,11 @@ header > #categories > #volunteeringButton:hover
 	display: none;
 }
 
+#mainSection > #about a:hover
+{
+	color:rgb(28, 154, 251);
+}
+
 #mainSection > #about > #inANutshell
 {
 	margin-top: 160px;
